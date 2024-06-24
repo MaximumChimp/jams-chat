@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="main">
+        <div class="name">
+            <span>user:</span>
+            <input type="text" id="name-input" class="name-input"  value="anonymous">
+        </div>
+        <ul class="message-container" id="message-container">
+            <li class="message-left">
+                <p class="message">
+                    <span></span>
+                </p>
+            </li>
+
+            <li class="message-right">
+                <p class="message">
+                    <span></span>
+                </p>
+            </li>
+            
+            <li class="message-feedback">
+                <p class="feedback" id="feedback">
+                  
+                </p>
+            </li>
+
+        </ul>
+
+        <form class="message-form" id="message-form">
+            <input type="text" name="message" id="message-input" class="message-input">
+            <div class="v-divider"></div>
+            <button type="submit" class="send-button">Send</button>
+           
+        </form>
+    </div>
+    <h3 class="clients-total" id="clients-total">Total clients:2</h3>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
